@@ -1,0 +1,15 @@
+.base {
+  transition: opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+.fromUp    { opacity: 0; transform: translateY(32px); }
+.fromLeft  { opacity: 0; transform: translateX(-32px); }
+.fromRight { opacity: 0; transform: translateX(32px); }
+.fade      { opacity: 0; transform: none; }
+
+.visible {
+  opacity: 1 !important;
+  transform: none !important;
+}
