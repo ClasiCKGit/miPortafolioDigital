@@ -12,23 +12,25 @@ export default function App() {
       <div className={styles.container}>
         <Navbar />
 
-        <section className={styles.section}>
-          <Hero />
-        </section>
+        <Reveal direction="up" delay={200}>
+          <section className={styles.section}>
+            <Hero />
+          </section>
+        </Reveal>
 
-        <Reveal direction="up">
+        <Reveal direction="up" delay={400}>
           <section className={styles.section}>
             <About />
           </section>
         </Reveal>
 
-        <Reveal direction="up" delay={80}>
+        <Reveal direction="up" delay={200}>
           <section className={styles.section}>
             <Projects />
           </section>
         </Reveal>
 
-        <Reveal direction="up" delay={60}>
+        <Reveal direction="up" delay={200}>
           <section className={styles.section}>
             <Contact />
           </section>

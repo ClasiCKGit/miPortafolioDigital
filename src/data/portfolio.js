@@ -1,5 +1,6 @@
 import foto from "./../assets/PhotoOfMe.jpg"
 import screenshot1 from "./../assets/ExpenseManagerScreenshot.jpg"
+import screenshot2 from "./../assets/DevPortfolio.jpg"
 
 export const profile = {
   name: 'Ramiro Pizzico',
@@ -11,24 +12,23 @@ export const profile = {
   email: 'ramiropizzico@gmail.com',
   github: 'https://github.com/ClasiCKGit',
   linkedin: 'https://linkedin.com/in/tuusuario',
-  photo: foto
+  photo: foto,
+  lang: 'En - English'
 }
 
 export const stats = [
   { value: '2024', label: 'año actual' },
-  { value: '15+', label: 'proyectos' },
   { value: 'Full Stack', label: 'especialidad' },
   { value: 'React / Node', label: 'stack' },
 ]
 
 export const stack = [
   { name: 'React',       category: 'frontend'  },
-  { name: 'TypeScript',  category: 'lang'  },
+  { name: 'TypeScript',  category: 'lang'      },
   { name: 'Next.js',     category: 'framework' },
   { name: 'Node.js',     category: 'backend'   },
-  { name: 'PostgreSQL',  category: 'database'  },
+  { name: 'MySQL',       category: 'database'  },
   { name: 'Docker',      category: 'devops'    },
-  { name: 'Tailwind',    category: 'styles'   },
   { name: 'Git',         category: 'control'   },
 ]
 
@@ -45,11 +45,11 @@ export const projects = [
   },
   {
     id: '02',
-    title: 'Nombre del Proyecto',
+    title: 'My dev porfolio',
     description:
-      'Descripción del proyecto: qué problema resuelve, para quién está pensado y cuál fue tu rol en el desarrollo.',
-    tags: ['Next.js', 'Stripe', 'Tailwind'],
-    screenshot: null,
+      'Portafolio de un estudiante de programación y desarrollador full stack enfocado en crear aplicaciones web modernas, responsivas y escalables (Mi portafolio).',
+    tags: ['React', 'Javascrpit', 'CSS'],
+    screenshot: screenshot2,
     url: '#',
     github: '#',
   },

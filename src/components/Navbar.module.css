@@ -18,6 +18,7 @@
 
 .links {
   display: flex;
+  align-items: center;
   gap: 24px;
 }
 
@@ -31,6 +32,31 @@
 
 .links a:hover {
   color: var(--main-color);
+}
+
+.themeBtn {
+  color: var(--accent-color);
+  filter: opacity(0.7);
+  padding: 4px 10px;
+  border-radius: 5px;
+  background-color: var(--border);
+  box-shadow: 0 2px 0 var(--accent-color);
+}
+
+[data-theme="light"] .themeBtn :only-child {
+  transform: scale(1);
+}
+
+.themeBtn:hover{
+  color: var(--main-color);
+  transform: translateY(-1.5px);
+  box-shadow: 0 4px 0 var(--main-color);
+}
+
+.themeBtn:active{
+  color: var(--main-color);
+  transform: translateY(2px);
+  box-shadow: 0 0 0;
 }
 
 .status {
