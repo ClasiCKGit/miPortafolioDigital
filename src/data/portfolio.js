@@ -11,7 +11,7 @@ export const profile = {
   bioEn:'A developer passionate about building products that combine functionality and design. I work with agile teams to solve real-world problems with clean, scalable code.',
   email: 'ramiropizzico@gmail.com',
   github: 'https://github.com/ClasiCKGit',
-  linkedin: 'https://linkedin.com/in/tuusuario',
+  linkedin: 'https://www.linkedin.com/in/ramiro-pizzico-9570083b7/',
   photo: foto,
   lang: 'En - English'
 }

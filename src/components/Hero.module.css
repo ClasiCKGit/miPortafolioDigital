@@ -47,7 +47,7 @@
 
 .roleBar {
   display: flex;
-  gap: 24px;
+  gap: 36px;
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
   padding: 12px 0;
