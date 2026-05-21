@@ -10,9 +10,8 @@
 .logo {
   font-family: var(--font-condensed);
   font-weight: 800;
-  font-size: 22px;
+  font-size: 36px;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
   color: var(--main-color);
 }
 
@@ -47,20 +46,20 @@
   transform: scale(1);
 }
 
-.themeBtn:hover{
+.themeBtn:hover {
   color: var(--main-color);
   transform: translateY(-1.5px);
   box-shadow: 0 4px 0 var(--main-color);
 }
 
-.themeBtn:active{
+.themeBtn:active {
   color: var(--main-color);
   transform: translateY(2px);
   box-shadow: 0 0 0;
 }
 
 .status {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.15em;
   color: var(--accent-color);
@@ -79,12 +78,37 @@
 }
 
 @keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.3; }
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+@media (max-width: 1024px) {
+  .links {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
-  .links {
+  .logo {
+    font-size: 22px;
+  }
+
+  .dot {
+    width: 4px;
+    height: 4px;
+  }
+  .status {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  .statusCity {
     display: none;
   }
 }

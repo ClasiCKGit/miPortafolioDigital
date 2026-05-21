@@ -9,15 +9,19 @@
 }
 
 .hero {
-  display: grid;
-  grid-template-columns: 1fr auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   gap: 3rem;
   align-items: start;
   margin-bottom: 3rem;
 }
 
 .left {
-  min-width: 0;
+  justify-content: space-between;
+  min-width: 100%;
+  display: flex;
+  flex-direction: row;
 }
 
 .eyebrow {
@@ -31,7 +35,7 @@
 .name {
   font-family: var(--font-condensed);
   font-weight: 800;
-  font-size: clamp(52px, 8vw, 80px);
+  font-size: 80px;
   line-height: 0.9;
   text-transform: uppercase;
   letter-spacing: -0.02em;
@@ -46,6 +50,7 @@
 }
 
 .roleBar {
+  width: 100%;
   display: flex;
   gap: 36px;
   border-top: 1px solid var(--border);
@@ -72,7 +77,9 @@
 
 /* Photo card */
 .photoCard {
+  justify-self: flex-end;
   width: 200px;
+  height: auto;
   flex-shrink: 0;
   border: 1px solid var(--border);
   border-radius: 12px;
@@ -111,50 +118,16 @@
   color: #333;
 }
 
-.photoMeta {
-  padding: 14px;
-}
+@media (max-width: 400px){
+  .roleBar{
+    gap: 20px
+  }
 
-.photoName {
-  font-family: var(--font-condensed);
-  font-weight: 800;
-  font-size: 16px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--text);
-}
+  .photoCard{
+    width: 150px;
+    height: auto;
+  }
 
-.photoRole {
-  font-size: 9px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--text-dim);
-  margin-top: 4px;
-}
-
-.photoLoc {
-  font-size: 11px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--accent-color);
-  margin-top: 8px;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.dotSmall {
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: var(--accent-color);
-  display: inline-block;
-  animation: blink 1.4s infinite;
-}
-
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.3; }
 }
 
 @media (max-width: 640px) {
@@ -162,8 +135,8 @@
     grid-template-columns: 1fr;
   }
 
-  .photoCard {
-    width: 100%;
+  .name{
+    font-size: 64px;
   }
 
   .photoFrame {

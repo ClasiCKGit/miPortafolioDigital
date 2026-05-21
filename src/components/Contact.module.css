@@ -2,10 +2,11 @@
   background: var(--main-color);
   padding: 1.5rem 2rem;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border-radius: 0 0 8px 8px;
-  margin-top: 1px;
+  border-radius: 8px;
+  margin-top: 3rem;
   flex-wrap: wrap;
   gap: 1rem;
 }
@@ -26,34 +27,71 @@
   flex-wrap: wrap;
 }
 
-.btnPrimary {
+.btn {
   font-family: var(--font-mono);
   font-size: 11px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--border);
   border: 1px solid var(--border);
+  border-radius: 3px;
   padding: 10px 18px;
-  transition: background 0.2s ease, color 0.2s ease;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
 }
 
-.btnPrimary:hover {
+.btn:hover {
   background: var(--border);
   color: var(--main-color);
 }
 
-.btnSecondary {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--border);
-  border: 1px solid var(--border);
-  padding: 10px 18px;
-  transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease;
+.btn svg{
+  transform: scale(1.5);
 }
 
-.btnSecondary:hover {
-  background-color: var(--accent-color);
-  border-color: var(--bg);
+.desktopTextMail{
+  display: inline;
+}
+.mobileTextMail{
+  display: none;
+}
+
+.desktopText {
+  display: inline;
+}
+.mobileText {
+  display: none;
+}
+
+@media (max-width: 1024px){
+  .desktopText{
+    display: none;
+  }
+
+  .mobileText{
+    display: inline;
+  }
+}
+
+@media (max-width: 768px) {
+  .links{
+    gap: 25px;
+  }
+
+  .desktopTextMail {
+    display: none;
+  }
+
+  .mobileTextMail {
+    display: inline;
+  }
+}
+
+@media (max-width:480px ){
+  .bar{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }

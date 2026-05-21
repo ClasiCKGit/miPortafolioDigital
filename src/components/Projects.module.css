@@ -38,7 +38,7 @@
 .screenshot {
   width: 100%;
   aspect-ratio: 16 / 10;
-  background: #111;
+  background: var(--bg);
   border-bottom: 1px solid var(--border-subtle);
   display: flex;
   flex-direction: column;
@@ -54,8 +54,8 @@
   position: absolute;
   inset: 0;
   background:
-    repeating-linear-gradient(0deg, transparent, transparent 28px, #161616 28px, #161616 29px),
-    repeating-linear-gradient(90deg, transparent, transparent 28px, #161616 28px, #161616 29px);
+    repeating-linear-gradient(0deg, transparent, transparent 28px, var(--bg-card-hover) 28px, var(--bg-card-hover) 29px),
+    repeating-linear-gradient(90deg, transparent, transparent 28px, var(--bg-card-hover) 28px, var(--bg-card-hover) 29px);
   opacity: 0.4;
 }
 
@@ -71,7 +71,7 @@
   font-size: 9px;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: #333;
+  color: var(--text-dim);
   position: relative;
   z-index: 1;
 }
@@ -100,7 +100,7 @@
 .desc {
   font-size: 12px;
   line-height: 1.6;
-  color: var(--text-dim);
+  color: var(--text-muted);
   flex: 1;
 }
 

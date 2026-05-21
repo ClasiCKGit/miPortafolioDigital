@@ -42,7 +42,7 @@ html {
 }
 
 body {
-  background-color: rgb(85, 40, 0) ;
+  background-color: rgb(70, 35, 5) ;
   color: var(--text);
   font-family: var(--font-mono);
   min-height: 100vh;
@@ -66,3 +66,16 @@ button {
   background: none;
   color: inherit;
 }
+
+
+/* Mobile */
+@media (min-width: 480px){}
+
+/* Tablet */
+@media (min-width: 768px){}
+
+/* Laptop */
+@media (min-width: 1024px){}
+
+/* Desktop grande */
+@media (min-width: 1280px){}
