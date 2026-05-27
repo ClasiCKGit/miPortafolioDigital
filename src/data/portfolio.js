@@ -1,6 +1,8 @@
 import foto from "./../assets/PhotoOfMe.jpg"
-import screenshot1 from "./../assets/ExpenseManagerScreenshot.jpg"
-import screenshot2 from "./../assets/DevPortfolio.jpg"
+import screenshot1Dark from "./../assets/ExpensesManagerDark.jpg"
+import screenshot1Light from "./../assets/ExpensesManagerLight.jpg"
+import screenshot2Dark from "./../assets/DevPortfolioDark.jpg"
+import screenshot2Light from "./../assets/DevPortfolioLight.jpg"
 
 export const profile = {
   name: 'Ramiro Pizzico',
@@ -38,8 +40,9 @@ export const projects = [
     title: 'Manager de gastos personal',
     description:
       'Gestor de ingresos y gastos personales, con la mision de ayudar al usuario a ahorrar, categorizando los gastos y permitiendo generar presupuestos y metas de ahorro.',
-    tags: ['React', 'Typescript', 'Node', 'MySQL', 'Prisma', 'JWT'],
-    screenshot: screenshot1,
+    tags: ['React', 'Typescript', 'Node', 'MySQL', 'Prisma', 'JWT', 'Docker'],
+    screenshotDark: screenshot1Dark,
+    screenshotLight: screenshot1Light,
     url: '#',
     github: '#',
   },
@@ -49,17 +52,19 @@ export const projects = [
     description:
       'Portafolio de un estudiante de programación y desarrollador full stack enfocado en crear aplicaciones web modernas, responsivas y escalables (Mi portafolio).',
     tags: ['React', 'Javascrpit', 'CSS'],
-    screenshot: screenshot2,
+    screenshotDark: screenshot2Dark,
+    screenshotLight: screenshot2Light,
     url: '#',
     github: '#',
   },
   {
     id: '03',
-    title: 'Nombre del Proyecto',
+    title: 'Proximamente',
     description:
       'Descripción del proyecto: qué problema resuelve, para quién está pensado y cuál fue tu rol en el desarrollo.',
-    tags: ['Express', 'Redis', 'Docker'],
-    screenshot: null,
+    tags: ['', '', ''],
+    screenshotDark: null,
+    screenshotLight: null,
     url: '#',
     github: '#',
   },

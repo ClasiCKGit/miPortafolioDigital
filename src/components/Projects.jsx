@@ -1,6 +1,7 @@
 import styles from './Projects.module.css'
 import { projects } from '../data/portfolio'
 import Reveal from './Reveal'
+import { useEffect, useState } from 'react'
 
 function MonitorIcon() {
   return (
@@ -12,7 +13,8 @@ function MonitorIcon() {
   )
 }
 
-export default function Projects() {
+export default function Projects({theme}) {
+  
   return (
     <section id="proyectos" className={styles.section}>
       <div className={styles.header}>
@@ -23,8 +25,8 @@ export default function Projects() {
           <Reveal key={project.id} direction="up" delay={i * 100}>
           <article className={styles.card}>
             <div className={styles.screenshot}>
-              {project.screenshot ? (
-                <img src={project.screenshot} alt={project.title} className={styles.screenshotImg} />
+              {project.screenshotDark || project.screenshotLight ? (
+                <img src={theme === "dark" ? project.screenshotDark : project.screenshotLight} alt={project.title} className={styles.screenshotImg} style={theme === "light" && project.id === "01" ? {filter: "brightness(0.87)"} : {}}/>
               ) : (
                 <>
                   <MonitorIcon/>

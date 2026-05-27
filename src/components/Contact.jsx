@@ -4,7 +4,7 @@ import { SiGmail, SiGithub,SiWhatsapp } from "react-icons/si";
 import { BsLinkedin } from "react-icons/bs";
 
 export default function Contact() {
-
+  const message="Hola Ramiro, vi tu portfolio y queria contactarte."
   return (
     <footer id="contacto" className={styles.bar}>
       <div className={styles.text}>Let's talk</div>
@@ -13,18 +13,18 @@ export default function Contact() {
           <span className={styles.mobileTextMail}><SiGmail/></span>
           <span className={styles.desktopTextMail}>{profile.email} →</span>
         </a>
-        <a href="" className={styles.btn}>
+        <a href={`https://wa.me/5492923416756?text=${message}`} target="_blank" rel="noreferrer" className={styles.btn}>
           <span className={styles.mobileText}><SiWhatsapp/></span>
             <span className={styles.desktopText}>Whatsapp</span>
         </a>
         {profile.linkedin && (
-          <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" className={styles.btn}>
+          <a href={profile.linkedin} target="_blank" rel="noreferrer" className={styles.btn}>
             <span className={styles.mobileText}><BsLinkedin/></span>
             <span className={styles.desktopText}>Linkedin</span>
           </a>
         )}
         {profile.github && (
-          <a href={profile.github} target="_blank" rel="noopener noreferrer" className={styles.btn}>
+          <a href={profile.github} target="_blank" rel="noreferrer" className={styles.btn}>
             <span className={styles.mobileText}><SiGithub/></span>
             <span className={styles.desktopText}>GitHub</span>
           </a>

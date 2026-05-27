@@ -30,6 +30,7 @@
 }
 
 .links a:hover {
+  cursor: pointer;
   color: var(--main-color);
 }
 

@@ -19,8 +19,8 @@ const icons = {
 
 export default function About() {
   return (
-    <div id="stack" className={styles.grid}>
-      <div className={styles.cell}>
+    <div className={styles.grid}>
+      <div id="sobre-mi" className={styles.cell}>
         <p className={styles.label}>// sobre mí - ES</p>
         <p className={styles.bio}>{profile.bioEs}</p>
         <p className={styles.label}>// about me - En</p>
@@ -28,7 +28,7 @@ export default function About() {
       </div>
       <div className={styles.cell}>
         <p className={styles.label}>// stack</p>
-        <ul className={styles.techList}>
+        <ul id="stack" className={styles.techList}>
           {stack.map((item) => (
             <li key={item.name} className={styles.techRow}>
               <div className={styles.techName}><div className={styles.icon}>{icons[item.name]}</div>{item.name}</div>

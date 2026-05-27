@@ -3,7 +3,7 @@ import { profile, stats } from "../data/portfolio";
 
 export default function Hero() {
   return (
-    <section id="sobre-mi" className={styles.hero}>
+    <section className={styles.hero}>
       <div className={styles.left}>
         <div>
         <p className={`${styles.eyebrow} ${styles.animIn}`} style={{ animationDelay: "0ms" }}>
